@@ -5,45 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZooBox Homelab</title>
     <style>
-        body { 
-            margin: 0; 
-            font-family: Arial, sans-serif; 
-            background: linear-gradient(135deg, #1a1a2e, #16213e); 
-            color: #fff; 
-            text-align: center; 
-            padding: 20px; 
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
-        h1 { font-size: 2.5em; margin-bottom: 10px; }
-        p { font-size: 1.2em; margin: 20px 0; }
-        img { max-width: 100%; height: auto; border-radius: 10px; margin: 20px 0; }
-        .zoo-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 40px; }
-        .zoo-item { flex: 1 1 200px; }
-        footer { margin-top: 50px; font-size: 0.9em; opacity: 0.8; }
+        h1 { font-size: 3em; margin: 20px 0 10px; }
+        h2 { font-size: 1.6em; margin: 15px 0 8px; }
+        p { font-size: 1.2em; margin: 10px 0; line-height: 1.5; }
+        img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 12px;
+            margin: 30px auto;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+        }
+        .zoo-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 50px auto;
+            max-width: 1000px;
+        }
+        .zoo-item {
+            background: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 12px;
+            flex: 1 1 260px;
+            min-width: 260px;
+        }
+        a { color: #4CAF50; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+        footer {
+            margin-top: auto;
+            padding: 30px;
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
     </style>
 </head>
 <body>
-    <h1> Welcome to ZooBox </h1>
-    <p>Your cozy homelab enclosure—where servers roam free and bits don't bite.</p>
-    
-    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800" alt="Zoo animals in enclosure" width="400">
-    
+
+    <h1>🦁 Welcome to ZooBox 🦭</h1>
+    <p>Your cozy homelab enclosure — where servers roam free and bits don’t bite.</p>
+
+    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=900&auto=format&fit=crop" alt="Zoo animals chilling">
+
     <div class="zoo-grid">
         <div class="zoo-item">
-            <h2> Minecraft Realm</h2>
-            <p>Join the fun at <a href="https://minecraft.zoobox.space" style="color: #4CAF50;">minecraft.zoobox.space</a></p>
+            <h2>🎮 Minecraft Realm</h2>
+            <p>Join the fun at <br><a href="https://minecraft.zoobox.space">minecraft.zoobox.space</a></p>
         </div>
         <div class="zoo-item">
-            <h2> File Vault</h2>
-            <p>Secure storage coming soon to files.zoobox.space</p>
+            <h2>📁 File Vault</h2>
+            <p>Secure storage coming soon → files.zoobox.space</p>
         </div>
         <div class="zoo-item">
-            <h2> Media Den</h2>
-            <p>Movies and shows at media.zoobox.space</p>
+            <h2>🎬 Media Den</h2>
+            <p>Movies & shows at <br>media.zoobox.space</p>
         </div>
     </div>
-    
+
     <footer>
-        <p>Under construction... more exhibits soon! Built with in the lab.</p>
+        <p>Under construction… more exhibits opening soon! Built with ❤️ in the lab.</p>
     </footer>
+
 </body>
 </html>
